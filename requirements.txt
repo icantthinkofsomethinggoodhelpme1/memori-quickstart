@@ -1,0 +1,7 @@
+memori
+openai
+google-genai
+SQLAlchemy
+flask
+python-dotenv
+

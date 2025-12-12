@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memori Labs - Interactive Demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1>Memori Labs</h1>
+                <p class="tagline">Persistent Memory for AI Conversations</p>
+            </div>
+            <nav class="nav">
+                <a href="/" class="nav-link active">Chat</a>
+                <a href="/theory" class="nav-link">Theory</a>
+            </nav>
+        </header>
+
+        <main class="chat-container">
+            <div class="chat-header">
+                <h2>Interactive Memory Demo</h2>
+                <p class="subtitle">Compare AI with and without persistent memory!</p>
+                
+                <div class="controls">
+                    <div class="control-group">
+                        <label for="providerSelect">Provider:</label>
+                        <select id="providerSelect" class="control-select">
+                            <option value="openai">OpenAI</option>
+                            <option value="gemini">Gemini</option>
+                        </select>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="modelSelect">Model:</label>
+                        <select id="modelSelect" class="control-select">
+                            <option value="gpt-4o">gpt-4o</option>
+                            <option value="gpt-4o-mini">gpt-4o-mini</option>
+                            <option value="gpt-4-turbo">gpt-4-turbo</option>
+                            <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
+                        </select>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="memoriToggle">Memory:</label>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="memoriToggle" class="toggle-input" checked>
+                            <label for="memoriToggle" class="toggle-label">
+                                <span class="toggle-text" data-on="With Memori" data-off="Without Memori"></span>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button id="resetBtn" class="reset-btn">Reset Session</button>
+                </div>
+            </div>
+
+            <div id="chatMessages" class="chat-messages">
+                <div class="welcome-message">
+                    <p>👋 Welcome! Compare AI with and without Memori.</p>
+                    <p class="example">Try this:</p>
+                    <ol style="text-align: left; display: inline-block; color: var(--text-secondary);">
+                        <li>With Memori ON: Tell me "My name is Alex"</li>
+                        <li>Then ask "What's my name?" - I'll remember!</li>
+                        <li>Toggle Memori OFF and ask again - I won't remember</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <form id="chatForm" class="chat-form">
+                    <input 
+                        type="text" 
+                        id="messageInput" 
+                        class="message-input" 
+                        placeholder="Type your message here..."
+                        autocomplete="off"
+                    >
+                    <button type="submit" id="sendBtn" class="send-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Powered by <strong>Memori</strong> - Building persistent memory for AI</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

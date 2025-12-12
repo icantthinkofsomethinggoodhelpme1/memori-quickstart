@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memori Labs - Theory & Documentation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1>Memori Labs</h1>
+                <p class="tagline">Persistent Memory for AI Conversations</p>
+            </div>
+            <nav class="nav">
+                <a href="/" class="nav-link">Chat</a>
+                <a href="/theory" class="nav-link active">Theory</a>
+            </nav>
+        </header>
+
+        <main class="theory-container">
+            <article class="theory-content">
+                <h2>How Memori Works</h2>
+                
+                <section class="theory-section">
+                    <h3>🎯 What is Memori?</h3>
+                    <p>
+                        Memori is a memory layer for AI applications that automatically captures facts from conversations 
+                        and persists them to a database. This enables AI systems to remember information across sessions 
+                        and provide contextually aware responses.
+                    </p>
+                </section>
+
+                <section class="theory-section">
+                    <h3>🧠 Automatic Memory Capture</h3>
+                    <p>
+                        When you interact with the AI, Memori automatically extracts factual information from the conversation. 
+                        For example, if you say "My favorite color is blue," Memori stores this fact in the database without 
+                        any explicit programming needed.
+                    </p>
+                    <div class="code-block">
+                        <pre><code>User: "My name is Sarah and I work as a software engineer"
+AI: [Responds naturally]
+Memori: [Automatically stores: "Sarah is a software engineer"]</code></pre>
+                    </div>
+                </section>
+
+                <section class="theory-section">
+                    <h3>🧭 With Memori vs. Without</h3>
+                    <p>See how persistence changes the experience:</p>
+                    <div class="code-block">
+                        <pre><code>Without Memori (stateless):
+User: "My name is Maya and I live in Seattle."
+AI: "Nice to meet you, Maya!"
+User (later): "Where do I live?"
+AI: "I don't have that info."
+
+With Memori (stateful):
+User: "My name is Maya and I live in Seattle."
+AI: "Great to meet you, Maya!"
+User (later): "Where do I live?"
+AI: "You live in Seattle."</code></pre>
+                    </div>
+                    <ul>
+                        <li><strong>Context carry-over:</strong> Prior facts are recalled automatically.</li>
+                        <li><strong>Isolation:</strong> Each attendee/session has its own memory.</li>
+                        <li><strong>Resettable:</strong> Use the reset button in the chat to start fresh.</li>
+                    </ul>
+                </section>
+
+                <section class="theory-section">
+                    <h3>🔍 Memory Recall</h3>
+                    <p>
+                        In subsequent conversations, Memori retrieves relevant stored facts and provides them to the AI model 
+                        as context. This allows the AI to answer questions about previously shared information.
+                    </p>
+                    <div class="code-block">
+                        <pre><code>User: "What's my name?"
+AI: [Receives context from Memori]
+AI: "Your name is Sarah!"</code></pre>
+                    </div>
+                </section>
+
+                <section class="theory-section">
+                    <h3>🔐 Attribution & Isolation</h3>
+                    <p>
+                        Memori uses <code>entity_id</code> and <code>process_id</code> to isolate memories per user or application. 
+                        This ensures that:
+                    </p>
+                    <ul>
+                        <li>Each user's memories are kept separate</li>
+                        <li>Different applications can use the same database without conflicts</li>
+                        <li>Privacy and data isolation are maintained</li>
+                    </ul>
+                </section>
+
+                <section class="theory-section">
+                    <h3>💾 Storage Backends</h3>
+                    <p>
+                        Memori supports multiple storage backends:
+                    </p>
+                    <ul>
+                        <li><strong>SQLite</strong> - Used in this demo, perfect for development and small applications</li>
+                        <li><strong>PostgreSQL</strong> - Production-ready for larger applications</li>
+                        <li><strong>Other databases</strong> - Via SQLAlchemy</li>
+                    </ul>
+                </section>
+
+                <section class="theory-section">
+                    <h3>⚡ How It Works Under the Hood</h3>
+                    <ol>
+                        <li><strong>LLM Call:</strong> Your message is sent to the AI model (OpenAI or Gemini)</li>
+                        <li><strong>Response:</strong> The AI generates a natural response</li>
+                        <li><strong>Augmentation:</strong> Memori asynchronously extracts facts from the conversation</li>
+                        <li><strong>Storage:</strong> Facts are stored in the database with attribution</li>
+                        <li><strong>Recall:</strong> On future queries, relevant facts are retrieved and provided as context</li>
+                    </ol>
+                </section>
+
+                <section class="theory-section">
+                    <h3>🚀 Use Cases</h3>
+                    <ul>
+                        <li><strong>Personal Assistants:</strong> Remember user preferences and past interactions</li>
+                        <li><strong>Customer Support:</strong> Maintain context across multiple support sessions</li>
+                        <li><strong>Educational AI:</strong> Track student progress and learning history</li>
+                        <li><strong>Healthcare AI:</strong> Remember patient information (with proper privacy controls)</li>
+                        <li><strong>Conversational Agents:</strong> Build relationships through memory</li>
+                    </ul>
+                </section>
+
+                <section class="theory-section">
+                    <h3>📚 Learn More</h3>
+                    <p>
+                        For more detailed documentation, visit the 
+                        <a href="https://memorilabs.ai/docs" target="_blank" class="external-link">official Memori documentation</a>.
+                    </p>
+                </section>
+            </article>
+        </main>
+
+        <footer class="footer">
+            <p>Powered by <strong>Memori</strong> - Building persistent memory for AI</p>
+        </footer>
+    </div>
+</body>
+</html>
